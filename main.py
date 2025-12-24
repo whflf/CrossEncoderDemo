@@ -11,7 +11,7 @@ import csv
 from sentence_transformers import SentenceTransformer, CrossEncoder, util
 
 queries = []
-with open('queries_physics.csv', 'r', encoding='utf-8') as file:
+with open('queries/queries_random.csv', 'r', encoding='utf-8') as file:
     reader = csv.reader(file)
     for row in reader:
         queries.append(row)
